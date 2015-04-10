@@ -110,12 +110,12 @@ BRUSHED.filter = function (){
 		var $container = $('#projects');
 		
 		$container.imagesLoaded(function() {
-			$container.isotope({
-			  // options
-			  animationEngine: 'best-available',
-			  itemSelector : '.item-thumbs',
-			  layoutMode : 'fitRows'
-			});
+		   $container.isotope({
+			// options
+			animationEngine: 'best-available',
+			itemSelector : '.item-thumbs',
+			layoutMode : 'fitRows'
+		   });
 		});
 	
 		
@@ -222,7 +222,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: 'style/js/twitter/',
+          modpath: 'style/scripts/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -405,7 +405,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'style/js/placeholder.js', 
+		nope: 'style/scripts/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
