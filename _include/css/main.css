@@ -6,7 +6,7 @@ Author URI: http://www.alessioatzeni.com
 Description: Personal Website and Portfolio of Alessio Atzeni
 Version: 1.0
 */
-
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 /* ==================================================
    Basic Styles
@@ -28,7 +28,7 @@ body{
 	color:#7F8289;
 	font-weight:300;
 	font-size:16px;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	line-height:28px;
 }
 
@@ -320,7 +320,7 @@ h3.spec {
 
 #home-slider #slidecaption {
 	width: 100%;
-	line-height: 250px;
+	line-height: 50px;
 	margin: 0;
 	text-align: center;
 	text-shadow: none;	
@@ -329,8 +329,24 @@ h3.spec {
 #home-slider .slide-content {
 	font-size: 60px;
 	color: #FFFFFF;
-	letter-spacing: -3px;
+	letter-spacing: 10px;
 	text-transform: uppercase;	
+}
+
+#home-slider .slide-content p{
+	font-size: 24px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-left: 190px;	
+	/*position: absolute;*/
+	left: 50%;
+	top: 50%;
+	/*margin: -50px 0 0 -580px;*/
+	width: 1170px;
+	height: 100px;
+	text-align: center;
+	z-index: 2;	
 }
 
 #home-slider .control-nav {
